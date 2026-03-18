@@ -1,0 +1,200 @@
+\documentclass[12pt, a4paper]{article}
+
+% --- Pakiety ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{multirow}
+
+% --- Marginesy ---
+\geometry{
+    top=2.5cm,
+    bottom=2.5cm,
+    left=2.5cm,
+    right=2.5cm
+}
+
+% --- Konfiguracja siunitx ---
+\sisetup{
+    output-decimal-marker = {,},
+    separate-uncertainty = true
+}
+
+% --- Dane raportu ---
+\newcommand{\tytul}{Tytuł ćwiczenia}
+\newcommand{\nrCwiczenia}{XX}
+\newcommand{\autor}{Imię Nazwisko}
+\newcommand{\nrGrupy}{X}
+\newcommand{\dataWykonania}{\today}
+
+% --- Tytuł dokumentu ---
+\title{
+    \large I Pracownia Fizyczna \\[0.5em]
+    \textbf{Ćwiczenie nr \nrCwiczenia} \\[0.3em]
+    \LARGE \tytul
+}
+\author{
+    \autor \\
+     Grupa \nrGrupy
+}
+\date{
+    Data wykonania pomiarów: \dataWykonania \\
+}
+
+% =============================================
+\begin{document}
+% =============================================
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% -------------------------------------------
+\section{Cel ćwiczenia}
+% -------------------------------------------
+
+Krótki opis celu eksperymentu — co mierzono i w jakim celu.
+
+% -------------------------------------------
+\section{Wstęp teoretyczny}
+% -------------------------------------------
+
+Opis teorii niezbędnej do zrozumienia ćwiczenia. Wzory kluczowe dla obliczeń, np.:
+
+\begin{equation}
+    F = ma
+    \label{eq:newton}
+\end{equation}
+
+gdzie $F$ jest siłą wypadkową [\si{\newton}], $m$ — masą ciała [\si{\kilogram}], a $a$ — przyspieszeniem [\si{\meter\per\second\squared}].
+
+% -------------------------------------------
+\section{Opis układu pomiarowego}
+% -------------------------------------------
+
+Opis użytego sprzętu i schematu układu.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.6\textwidth]{schemat.png}
+    \fbox{\parbox[c][5cm][c]{0.6\textwidth}{\centering Schemat układu pomiarowego}}
+    \caption{Schemat układu pomiarowego.}
+    \label{fig:schemat}
+\end{figure}
+
+Wykaz przyrządów:
+\begin{itemize}
+    \item Przyrząd 1 (dokładność: \SI{\pm 0.01}{\meter})
+    \item Przyrząd 2 (dokładność: \SI{\pm 0.001}{\kilogram})
+\end{itemize}
+
+% -------------------------------------------
+\section{Wyniki pomiarów}
+% -------------------------------------------
+
+\begin{table}[H]
+    \centering
+    \caption{Wyniki pomiarów.}
+    \label{tab:pomiary}
+    \begin{tabular}{c S[table-format=2.2] S[table-format=1.4] S[table-format=1.4]}
+        \toprule
+        \textbf{Nr} & \textbf{Wielkość 1 [\si{\meter}]} & \textbf{Wielkość 2 [\si{\second}]} & \textbf{Wynik [\si{\meter\per\second}]} \\
+        \midrule
+        1  &  &  &  \\
+        2  &  &  &  \\
+        3  &  &  &  \\
+        4  &  &  &  \\
+        5  &  &  &  \\
+        \midrule
+        Średnia & & & \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% -------------------------------------------
+\section{Opracowanie wyników}
+% -------------------------------------------
+
+\subsection{Obliczenia}
+
+Opis metody obliczeniowej. Przykładowe obliczenie wartości średniej:
+
+\begin{equation}
+    \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+\end{equation}
+
+\subsection{Niepewności pomiarowe}
+
+Niepewność standardowa typu A (statystyczna):
+
+\begin{equation}
+    u_A(x) = \sqrt{\frac{\sum_{i=1}^{n}(x_i - \bar{x})^2}{n(n-1)}}
+\end{equation}
+
+Niepewność standardowa typu B (z klasy przyrządu / podziałki):
+
+\begin{equation}
+    u_B(x) = \frac{\Delta x}{\sqrt{3}}
+\end{equation}
+
+Niepewność złożona:
+
+\begin{equation}
+    u_c(x) = \sqrt{u_A^2(x) + u_B^2(x)}
+\end{equation}
+
+Niepewność rozszerzona ($k = 2$, poziom ufności $\approx 95\%$):
+
+\begin{equation}
+    U(x) = k \cdot u_c(x) = 2 \cdot u_c(x)
+\end{equation}
+
+Propagacja niepewności dla wyniku $y = f(x_1, x_2, \ldots)$:
+
+\begin{equation}
+    u_c(y) = \sqrt{\sum_{i} \left(\frac{\partial f}{\partial x_i}\right)^2 u_c^2(x_i)}
+\end{equation}
+
+\subsection{Wynik końcowy}
+
+\begin{equation}
+    y = \bar{y} \pm U(y) = (\num{0.00} \pm \num{0.00}) \; \si{\meter\per\second}
+\end{equation}
+
+% -------------------------------------------
+\section{Wykresy}
+% -------------------------------------------
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{wykres.pdf}
+    \fbox{\parbox[c][7cm][c]{0.8\textwidth}{\centering Wykres}}
+    \caption{Opis wykresu.}
+    \label{fig:wykres}
+\end{figure}
+
+% -------------------------------------------
+\section{Wnioski}
+% -------------------------------------------
+
+\begin{itemize}
+    \item Podsumowanie uzyskanych wyników.
+    \item Porównanie z wartością tablicową (jeśli dotyczy): $y_\text{tab} = \SI{0.00}{\meter\per\second}$, odchylenie: $X$\,\%.
+    \item Dyskusja źródeł błędów i ocena jakości eksperymentu.
+\end{itemize}
+
+% =============================================
+\end{document}
+% =============================================

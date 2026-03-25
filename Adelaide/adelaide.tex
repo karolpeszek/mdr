@@ -249,7 +249,7 @@ Wyniki regresji przedstawiono w tabeli~\ref{tab:regresja}.
                     & Chłodzenie & 1.\ poł.  & $\frac{1}{T} = a\ln R + b$ & Nie                               & $\num{2.3e-4} \pm \num{1.3e-6}$ & $\num{1.2e-3} \pm \num{9.4e-6}$ \\
                     & Chłodzenie & 2.\ poł.  & $\frac{1}{T} = a\ln R + b$ & Nie                               & $\num{2.6e-4} \pm \num{2.5e-6}$ & $\num{9.7e-4} \pm \num{2.2e-5}$ \\
             \midrule
-            \multirow{12}{*}{Termopara}
+            \multirow{14}{*}{Termopara}
                     & Grzanie    & 1.\ poł.  & $T = aU + T_0$             & Tak ($T_0 = 0\,^\circ\mathrm{C}$) & $\num{25}   \pm \num{0.23}$     & ---                             \\
                     & Grzanie    & 1.\ poł.  & $T = aU + b$               & Nie                               & $\num{22}   \pm \num{0.11}$     & $\num{4.9} \pm \num{0.16}$      \\
                     & Grzanie    & 2.\ poł.  & $T = aU + T_0$             & Tak ($T_0 = 0\,^\circ\mathrm{C}$) & $\num{23}   \pm \num{0.12}$     & ---                             \\
@@ -262,6 +262,8 @@ Wyniki regresji przedstawiono w tabeli~\ref{tab:regresja}.
                     & Łączone    & 1.\ poł.  & $T = aU + b$               & Nie                               & $\num{23}   \pm \num{0.27}$     & $\num{3.9} \pm \num{0.4}$       \\
                     & Łączone    & 2.\ poł.  & $T = aU + T_0$             & Tak ($T_0 = 0\,^\circ\mathrm{C}$) & $\num{23}   \pm \num{0.12}$     & ---                             \\
                     & Łączone    & 2.\ poł.  & $T = aU + b$               & Nie                               & $\num{20}   \pm \num{0.25}$     & $\num{12}  \pm \num{0.76}$      \\
+                    & Łączone    & wszystkie & $T = aU + T_0$             & Tak ($T_0 = 0\,^\circ\mathrm{C}$) & $\num{24}   \pm \num{0.14}$     & ---                             \\
+                    & Łączone    & wszystkie & $T = aU + b$               & Nie                               & $\num{21}   \pm \num{0.14}$     & $\num{6.8} \pm \num{0.35}$      \\
             \bottomrule
         \end{tabular}%
     }
@@ -335,6 +337,21 @@ przerywana) wyraz wolny jest stały, więc $u(\hat{T}) = |U|\cdot u(a)$.
         współczynników regresji. Porównanie wyników z rys.~\ref{fig:termopara_polowy}
         pozwala ocenić powtarzalność i symetrię charakterystyki termopary
         podczas grzania i chłodzenia.}\label{fig:termopara_laczone}
+\end{figure}
+
+% Termopara: regresja na wszystkich punktach łącznie
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{wykres5_termopara_wszystkie.pdf}
+    \caption{Regresja liniowa termopary wyznaczona na podstawie wszystkich punktów pomiarowych
+        (grzanie i chłodzenie łącznie).
+        Oś~$x$: napięcie termoelektryczne $U$ (mV); oś~$y$: temperatura $T$ (\si{\degreeCelsius}).
+        Linia przerywana (niebieska) --- model zakotwiczony $T = aU + T_0$
+        z $T_0 = 0\,^\circ\mathrm{C}$; zacieniowany obszar --- $u(\hat{T}) = |U|\cdot u(a)$.
+        Linia ciągła (czerwona) --- model swobodny $T = aU + b$;
+        zacieniowany obszar --- $u(\hat{T}) = \sqrt{{(U\cdot u(a))}^2 + {u(b)}^2}$.
+        Połączenie wszystkich danych minimalizuje niepewności współczynników regresji
+        i daje globalną charakterystykę termopary.}\label{fig:termopara_wszystkie}
 \end{figure}
 
 \section{Opracowanie wyników}
@@ -436,6 +453,7 @@ przedstawiono w tabeli~\ref{tab:alpha}.
         Chłodzenie --- 2.\ połowa & 23.93                                                             & 0.14 & 0.04179 & 0.00025 & 41.79 & 0.25 \\
         Łączone --- 1.\ połowa    & 25.73                                                             & 0.16 & 0.03887 & 0.00024 & 38.87 & 0.24 \\
         Łączone --- 2.\ połowa    & 23.34                                                             & 0.12 & 0.04284 & 0.00022 & 42.84 & 0.22 \\
+        Łączone --- wszystkie     & 23.76                                                             & 0.14 & 0.04209 & 0.00025 & 42.09 & 0.25 \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -465,6 +483,7 @@ Analogicznie, współczynnik Seebecka można wyznaczyć z modelu swobodnego
         Chłodzenie --- 2.\ połowa & 20.59                                                             & 0.069 & 0.04857 & 0.00016 & 48.57 & 0.16 \\
         Łączone --- 1.\ połowa    & 23.17                                                             & 0.27  & 0.04316 & 0.00051 & 43.16 & 0.51 \\
         Łączone --- 2.\ połowa    & 19.65                                                             & 0.25  & 0.05088 & 0.00064 & 50.88 & 0.64 \\
+        Łączone --- wszystkie     & 21.22                                                             & 0.14  & 0.04713 & 0.00032 & 47.13 & 0.32 \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -483,12 +502,29 @@ obliczyć następujące wyniki współczynnika $\alpha$ jako średnie ważone:
         Model
                      & \multicolumn{2}{c}{$\bar{\alpha}$ (\si{\milli\volt\per\degreeCelsius})}          \\
         \midrule
-        Zakotwiczony & 0.0409                                                                  & 0.0001 \\
-        Swobodny     & 0.0471                                                                  & 0.0002 \\
+        Zakotwiczony & 0.04108                                                                 & 0.00009 \\
+        Swobodny     & 0.04716                                                                 & 0.00011 \\
         \bottomrule
     \end{tabular}
 \end{table}
 
+Porównując wyniki ze wszystkich modeli można zauważyć, że wartości współczynnika Seebecka nie są w granicach swoich niepewności. Prowadzi to do wniosku, że różne części ogrzewania i chłodzenia mogły być obarczone różynymi błędami systematycznymi. Z tego powodu odrzucono wyniki obliczone ze średnich i jako ostateczny wynik przyjęto wyniki obliczone metodoą regresji ze wszystkich punktów chłodzenia i ogrzewania termopary. Wyniki te przestawiono w tabeli~\ref{tab:alpha_wynik_final}.
+\begin{table}[H]
+    \centering
+    \sisetup{separate-uncertainty=false}
+    \caption{Ostateczne wyniki współczynnika Seebecka $\alpha$ termopary dla obu modeli regresji, obliczone na podstawie wszystkich punktów pomiarowych.}\label{tab:alpha_wynik_final}
+    \setlength{\tabcolsep}{12pt}
+    \begin{tabular}{l
+            S[table-format=1.5] @{${}\pm{}$} S[table-format=1.5]}
+        \toprule
+        Model
+                     & \multicolumn{2}{c}{$\alpha$ (\si{\milli\volt\per\degreeCelsius})}          \\
+        \midrule
+        Zakotwiczony & 0.04209                                                                 & 0.00025 \\
+        Swobodny     & 0.04713                                                                 & 0.00032 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
 % -------------------------------------------
 \section{Wnioski}
 % -------------------------------------------
@@ -504,17 +540,6 @@ Obliczona szerokość pasma półprzewodniczego mieści się w zakresie typowych
 wartości dla Germanu ($ \SI{0.67}{\electronvolt} - \SI{0.72}{\electronvolt} $).
 
 \subsection{Termopara}
-Dla termopary otrzymano dwa różne wyniki, które nie są w swoich granicach
-błędów. Model zakotwiczony dał $\bar{\alpha} =
-    \SI{0.0409}{\milli\volt\per\degreeCelsius} \pm
-    \SI{0.0001}{\milli\volt\per\degreeCelsius}$, natomiast model swobodny dał
-$\bar{\alpha} = \SI{0.0471}{\milli\volt\per\degreeCelsius} \pm
-    \SI{0.0002}{\milli\volt\per\degreeCelsius}$. Spowodowane jest to
-współczynnikiem $b$, który w regresjach niezakotwiczonych był istotnie różny od
-zera, co wskazuje na obecność błędu systematycznego lub odchylenia od idealnego
-zachowania termopary. Zakotwiczenie regresji dla temperatury $
-    \SI{0}{\degreeCelsius} $ spowodowało konieczność `stromszego nachylenia'
-prostej, co skutkowało wyższą wartością współczynnika kierunkowego $a$ a przez
-to niższą wartością $ \bar{\alpha} $.
+Wyniki z różnych regresji dla termopary nie są zgodne w granicach niepewności. Na wykresie jasno widać że punkty w różnych odcinkach znajdowały się nad lub pod prostą regresji. Prowadzi to do wniosku, że w trakcie wykonywnania pomiarów w różnych momentach występowały różne błędy systematyczne. Z tego powodu odrzucono wyniki obliczone jako średnie ważone z poszczególnych regresji a jako ostateczny wynik przyjęto współczynnik Seebecka $\alpha = \SI{0.04209}{\milli\volt\per\degreeCelsius} \pm \SI{0.00025}{\milli\volt\per\degreeCelsius}$, wyznaczony z modelu zakotwiczonego $T = aU + T_0$ na podstawie wszystkich punktów pomiarowych. Otrzymany wynik jest zgodny z typowymi wartościami współczynnika Seebecka dla termopar typu K, które wynoszą około $\SI{0.041}{\milli\volt\per\degreeCelsius}$.
 \end{document}
 % =============================================

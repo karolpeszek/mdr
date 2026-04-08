@@ -163,22 +163,22 @@ Masę dolanej gorącej wody $m_g$ wyznacza się przez zważenie kalorymetru prze
 po dolaniu wody.
 
 % -------------------------------------------
-\section{Przyjęte wartości stałe}
+\subsection{Przyjęte wartości stałe}
 % -------------------------------------------
-\subsection{Pomiar ciepła topnienia lodu}
+\subsubsection{Pomiar ciepła topnienia lodu}
 Do wyznaczenia ciepła topnienia lodu z bilansu cieplnego~\eqref{eq:qt} należy
 znać ciepło wartość ciepła właściwego wody oraz kalorymetru (zbudowanego z
 aluminium). W ćwiczeniu przyjęto następujące wartości:
 
 \begin{itemize}
-    \item Ciepło właściwe wody: $c_w = \qty{4187}{\joule\per\kilogram\per\kelvin}$,
-    \item Ciepło właściwe aluminium: $c_{Al} = \qty{897}{\joule\per\kilogram\per\kelvin}$.
+    \item Ciepło właściwe wody: $c_w = \qty{4187}{\joule\per\kilogram\per\kelvin}$~\cite{skrypt},
+    \item Ciepło właściwe aluminium: $c_{Al} = \qty{897}{\joule\per\kilogram\per\kelvin}$~\cite{emetal}.
 \end{itemize}
 
-\subsection{Pomiar ciepła właściwego kalorymetru}
+\subsubsection{Pomiar ciepła właściwego kalorymetru}
 Do wyznaczenia ciepła właściwego kalorymetru z bilansu cieplnego~\eqref{eq:ck}
 również potrzebne jest ciepło właściwe wody, które przyjęto jako $c_w =
-    \qty{4187}{\joule\per\kilogram\per\kelvin}$.
+    \qty{4187}{\joule\per\kilogram\per\kelvin}$~\cite{skrypt}.
 
 % -------------------------------------------
 \section{Opis układu pomiarowego}
@@ -190,6 +190,7 @@ również potrzebne jest ciepło właściwe wody, które przyjęto jako $c_w =
 \end{figure}
 
 \subsection{Przyrządy użyte do przeprowadzenia eksperymentu}
+W ćwiczeniu wykorzystano następujące przyrządy pomiarowe:
 \begin{itemize}
     \item kalorymetr:
     \begin{itemize}
@@ -200,11 +201,11 @@ również potrzebne jest ciepło właściwe wody, które przyjęto jako $c_w =
         \item termometr o podziałce \qty{0.2}{\degreeCelsius} i zakresie pomiarowym od \qty{10}{\degreeCelsius} do \qty{50}{\degreeCelsius},
     \end{itemize}
     \item waga elektryczna AXIS B2 o zakresie pomiarowym do \qty{2000}{\gram} i dokładności \qty{0.1}{\gram},
-    \item plastikowa zlewka
-    \item ręczniki papierowe
-    \item odstana woda w temperaturze pokojowej
-    \item ciepła i zimna woda z kranu
-    \item kostki lodu z zamrażarki w temperaturze \qty{0}{\degreeCelsius}
+    \item plastikowa zlewka,
+    \item ręczniki papierowe,
+    \item odstana woda w temperaturze pokojowej,
+    \item ciepła i zimna woda z kranu,
+    \item kostki lodu z zamrażarki w temperaturze \qty{0}{\degreeCelsius} osuszone ręcznikiem papierowym.
 \end{itemize}
 
 \subsection{Opis układu pomiarowego}
@@ -217,7 +218,7 @@ Pomiary przeprowadzono w dniu 25.03.2026 roku. Procedura pomiarowa składała si
 \subsection{Pomiar ciepła topnienia lodu}
 Wykonano 4 serier pomiarowe. W każdej serii wykonano następujące czynności:
 \begin{enumerate}
-    \item Przygotowanie układu pomiarowego zgodnie ze zdjęciem schematu~\ref{fig:schemat}.
+    \item Przygotowanie układu pomiarowego zgodnie z rysunkiem~\ref{fig:schemat}.
     \item Nalanie wewnętrznej części kalorymetru wody.
     \item Zważenie kalorymetru z wodą i mieszadełkiem.
     \item Włożenie wewnętrznej części z wodą do zewnętrznej części kalorymetru.
@@ -281,7 +282,7 @@ Lp. & {$m_k$ [\unit{\gram}]} \\
 \end{table}
 
 \subsection{Wyznaczanie ciepła właściwego kalorymetru}\label{sec:wyniki_qal}
-
+Wyniki bezpośrednich pomiarów dla wyznaczania ciepła właściwego kalorymetru zostały przedstawione poniżej:
 \begin{table}[H]
 \centering
 \caption{Wielokrotne pomiary mas podczas wyznaczania ciepła właściwego kalorymetru.
@@ -402,10 +403,10 @@ Lp. & {Seria 1} & {Seria 2} & {Seria 3} & {Seria 4} \\
 \toprule
 Seria & {$m_w$ [\unit{\gram}]} & {$u_{m_w}$ [\unit{\gram}]} \\
 \midrule
-1 & 529.60 & 0.149 \\
-2 & 357.24 & 0.148 \\
-3 & 405.20 & 0.149 \\
-4 & 518.42 & 0.149 \\
+1 & 529.60 & 0.15 \\
+2 & 357.24 & 0.15 \\
+3 & 405.20 & 0.15 \\
+4 & 518.42 & 0.15 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -496,11 +497,7 @@ Seria & {$q_t$ [\unit{\joule\per\kilogram}]} & {$u_{q_t}$ [\unit{\joule\per\kilo
 
 Ostateczna wartość ciepła topnienia lodu wyznaczona jako ważona średnia
 z~serii 1--3 (wagi $w_i = 1/u_i^2$):
-\begin{equation}
-    q_t = \qty{325784 \pm 3433}{\joule\per\kilogram}
-        \approx \qty[separate-uncertainty=true]{326(3)}{\kilo\joule\per\kilogram}.
-    \label{eq:qt_wynik}
-\end{equation}
+\refstepcounter{equation}\label{eq:qt_wynik}\(q_t = \qty{325784 \pm 3433}{\joule\per\kilogram} \approx \qty[separate-uncertainty=true]{326(3)}{\kilo\joule\per\kilogram}.\)
 Wyniki pomiarowe wraz ze średnią ważoną i~wartością tablicową przedstawiono
 na rysunku~\ref{fig:qt_wyniki}.
 
@@ -522,6 +519,19 @@ Wyznaczone ciepło właściwe kalorymetru jest zgodne z~wartością tablicową, 
 
 \subsection{Ciepło topnienia lodu}
 Wyznaczone ciepło topnienia lodu nie jest zgodne w granicy błędu z wartością tablicową, jednak względny błąd jest rzędu 3\%. Do czynników mogących mieć wpływ warto zaliczyć kalorymetr, który po wrzuceniu kostek lodu był wyczuwalnie chłodniejszy w dotyku od identycznego modelu nie uczestniczącego w eksperymencie. Przyczyną rozbieżności może być również niedokładne osuszenie kostek lodu, co wprowadziło błąd systematyczny do bilansu cieplnego. Ponadto, w~serii~4, prawdopodobnie z~powodu błędnego zapisu wyników, zmierzona masa lodu była śladowa, co skutkowało wykluczeniem tej serii z~analizy. Mimo tych niedoskonałości, uzyskany wynik jest zadowalający i~świadczy o~poprawności przeprowadzonego eksperymentu oraz zastosowanej metodyki pomiarowej.
+
+\begin{thebibliography}{9}
+
+\bibitem{emetal}
+eMetal,
+\textit{Właściwości aluminium i stopów aluminium},
+\url{https://emetal.eu/aluminium/wlasciwosci-aluminium-i-stopow-aluminium/}
+[dostęp: 8 kwietnia 2026].
+
+\bibitem{skrypt}
+\textit{Skrypt do ćwiczeń laboratoryjnych z fizyki, I Pracownia Fizyczna}, ćwiczenie C4.
+
+\end{thebibliography}
 
 \end{document}
 % =============================================

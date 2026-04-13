@@ -75,7 +75,7 @@
 % -------------------------------------------
 \section{Cel ćwiczenia}
 % -------------------------------------------
-Celem ćwiczenia jest zweryfikowanie praw ruchu obrotowego bryły sztywnej poprzez rozpędzanie wahadła Oberbecka za pomocą ciężarków i badania czasu przelotu ciężarków przez fotokomórkę. Na podstawie pomiarów czasu przelotu ciężarków przez fotokomórkę, można obliczyć prędkość kątową wahadła, wyznaczyć moment bezwładności układu i zweryfikować zadane zależności.
+W niniejszej pracy zbadano ruch obrotowy bryły sztywnej na przykładzie wahadła Oberbecka napędzanego układem ciężarków zawieszonych na nici nawiniętej na oś wahadła. Przeprowadzono trzy serie pomiarowe, w których systematycznie zmieniano odległość bramek fotoelektrycznych, odległość ciężarków walcowych od osi obrotu oraz masę ciężarków napędowych, rejestrując każdorazowo czas przelotu między bramkami. Na podstawie ważonej regresji liniowej wyznaczono moment bezwładności wahadła nieobciążonego $J_X$ z trzech niezależnych eksperymentów i porównano uzyskane wartości. Wyniki potwierdzają liniowość przewidzianych przez teorię zależności oraz pozostają ze sobą w zgodności w granicach wyznaczonych niepewności pomiarowych.
 
 % -------------------------------------------
 \section{Wstęp teoretyczny}
@@ -86,15 +86,23 @@ Bryła sztywna to wyidealizowany model fizyczny zakładający ciało składając
 
 \subsection{Środek masy i moment bezwładności}
 Środek masy bryły sztywnej to punkt, w którym można wyobrazić sobie skoncentrowaną całą masę ciała. Formalnie środek masy jest punktem w trójwymiarowej przestrzeni opisanym przez wektor \(\vec{R}\), który jest średnią ważoną położenia wszystkich elementów masy ciała:
-\[\vec{R} = \frac{1}{M} \sum_{i} m_i \vec{r}_i\]
+\begin{equation}
+    \vec{R} = \frac{1}{M} \sum_{i} m_i \vec{r}_i
+\end{equation}
 gdzie \(M\) to całkowita masa bryły, \(m_i\) to masa i-tego elementu, a \(\vec{r}_i\) to jego położenie.
 W przypadku ciągłym sumę należy zastąpić całką:
-\[\vec{R} = \frac{1}{M} \int \vec{r} \, dm\]
+\begin{equation}
+    \vec{R} = \frac{1}{M} \int \vec{r} \, dm
+\end{equation}
 
 Moment bezwładności jest skalarną wielkością mówiącą jaki moment siły należby przyłożyć do ciała aby uzyskać określone przyspieszenie kątowe. Dla bryły sztywnej moment bezwładności \(I\) względem osi obrotu jest definiowany jako:
-\[I = \sum_{i} m_i r_i^2\]
+\begin{equation}
+    I = \sum_{i} m_i r_i^2
+\end{equation}
 gdzie \(r_i\) to odległość i-tego elementu masy od osi obrotu. W przypadku ciągłym, moment bezwładności można wyrazić jako całkę:
-\[I = \int r^2 \, dm\] 
+\begin{equation}
+    I = \int r^2 \, dm
+\end{equation} 
 
 \subsection{Dynamika ruchu obrotowego}
 
@@ -107,7 +115,7 @@ lub, zapisane przy użyciu momentu pędu:
 \begin{equation}
     \vec{N} = \frac{d\vec{L}}{dt}.
 \end{equation}
-Najprostszym przypadkiem ruchu obrotowego jest obrót bryły sztywnej dookoła ustalonej osi. Wtedy wektory momentu siły $\vec{N}$, prędkości kątowej $\vec{\omega}$ oraz momentu pędu $\vec{L} = J_{(O)}\vec{\omega}$ są do siebie równoległe i powiązane poprzez równanie ruchu:
+Najprostszym przykładem ruchu obrotowego jest obrót bryły sztywnej dookoła ustalonej osi. Wtedy wektory momentu siły $\vec{N}$, prędkości kątowej $\vec{\omega}$ oraz momentu pędu $\vec{L} = J_{(O)}\vec{\omega}$ są do siebie równoległe i powiązane poprzez równanie ruchu:
 \begin{equation}
     \vec{N} = \frac{d\vec{L}}{dt} = J_{(O)} \frac{d\vec{\omega}}{dt}.
 \end{equation}
@@ -118,8 +126,7 @@ W ogólnym przypadku wektor momentu pędu bryły sztywnej nie jest równoległy 
 gdzie tensor bezwładności $\hat{J}$ jest tensorem symetrycznym drugiego rzędu. Tensor bezwładności można zawsze zdiagonalizować poprzez obrót układu współrzędnych --- osie tego nowego układu współrzędnych nazywane są \textit{głównymi osiami bezwładności}.
 
 \subsection{Twierdzenie Steinera}
-
-Najczęściej moment bezwładności można łatwo obliczyć względem osi przechodzącej przez środek masy ciała. Dla określenia momentu bezwładności względem innej osi pomocne jest \textit{twierdzenie o osiach równoległych} (twierdzenie Steinera).
+Moment bezwładności względem osi przechodzącej przez środek masy oblicza się z definicji. Dla określenia momentu bezwładności względem innej osi korzysta się z \textit{twierdzenia o osiach równoległych} (twierdzenie Steinera).
 
 Oznaczmy przez $J_{CM}$ moment bezwładności bryły względem osi $O_{CM}$ przechodzącej przez środek masy. Moment bezwładności $J_{(O)}$ względem osi $O$ równoległej do $O_{CM}$ wyraża się wzorem:
 \begin{equation}
@@ -136,14 +143,11 @@ Dla jednorodnego walca o masie $M$, promieniu $R$ i wysokości $H$ środek masy 
 
 \subsection{Wahadło Oberbecka}
 
-Wahadło Oberbecka jest bryłą sztywną obracającą się wokół poziomej osi, składającą się z prostopadłych do siebie par ramion. Do ramion można przyczepić ciężarki w kształcie walca (masa $M_W$, promień $R_W$, wysokość $H_W$). Moment bezwładności takiego walca względem osi przechodzącej przez jego środek masy, prostopadłej do osi symetrii walca, wynosi (wzór~\ref{eq:cylinder_perp}):
-\[
-    J_{W,CM} = M_W\!\left(\frac{1}{4}R_W^2 + \frac{1}{12}H_W^2\right).
-\]
+Wahadło Oberbecka jest bryłą sztywną obracającą się wokół poziomej osi, składającą się z prostopadłych do siebie par ramion. Do ramion można przyczepić ciężarki w kształcie walca (masa $M_W$, promień $R_W$, wysokość $H_W$).
 Walec umieszczony jest w odległości $d_W$ od osi obrotu wahadła Oberbecka. Korzystając z twierdzenia Steinera (wzór~\ref{eq:steiner}), obliczamy moment bezwładności walca względem tej osi:
-\[
+\begin{equation}
     J_W = J_{W,CM} + M_W d_W^2.
-\]
+\end{equation}
 
 Moment bezwładności nieobciążonego wahadła wynosi $J_X$. Przy obciążeniu dwoma identycznymi ciężarkami umieszczonymi symetrycznie w odległości $d_W$ od osi, całkowity moment bezwładności układu wynosi $J = J_X + 2J_W$.
 
@@ -162,14 +166,14 @@ Zmienne $x$ i $\phi$ są ze sobą związane zależnością $x = r\phi$, skąd $d
     a = \frac{d^2x}{dt^2} = \frac{mgr^2}{J_X + 2J_W + mr^2}.
     \label{eq:acceleration}
 \end{equation}
-Dla ruchu jednostajnie przyspieszonego ciężarka startującego ze spoczynku droga wynosi $x(t) = at^2/2$, co pozwala na weryfikację praw ruchu obrotowego poprzez pomiary czasu przelotu.
+Dla ruchu jednostajnie przyspieszonego ciężarka startującego ze spoczynku droga wynosi $x(t) = at^2/2$, co pozwala na weryfikację praw ruchu obrotowego poprzez pomiary czasu przelotu~\cite{skrypt}.
 
 % -------------------------------------------
 \section{Opis układu pomiarowego}
 % -------------------------------------------
 
 \subsection{Wahadło Oberbecka}
-Używane w pomiarach wahadło Oberbecka (rysunek~\ref{fig:oberbeck}) jest obracającym się wokół poziomej osi układem dwóch par ramion. Do ramion można przyczepić ciężarki walcowe ($M_W$, $R_W$, $H_W$) umieszczane symetrycznie po obu stronach osi obrotu w odległości $d_W$. Na osi wahadła o promieniu $r$ nawinięta jest nić, która przechodzi przez bloczek i zakończona jest szalką z ciężarkami o masie $m$. Do pomiaru czasu przelotu szalki między ustalonymi punktami używane są bramki elektroniczne (fotokomórki).
+Używane w pomiarach wahadło Oberbecka (Rysunek ~\ref{fig:oberbeck}.) jest obracającym się wokół poziomej osi układem dwóch par ramion. Do ramion można przyczepić ciężarki walcowe ($M_W$, $R_W$, $H_W$) umieszczane symetrycznie po obu stronach osi obrotu w odległości $d_W$. Na osi wahadła o promieniu $r$ nawinięta jest nić, która przechodzi przez bloczek i zakończona jest szalką z ciężarkami o masie $m$. Do pomiaru czasu przelotu szalki między ustalonymi punktami używane są bramki elektroniczne (fotokomórki).
 
 \begin{figure}[H]
     \centering
@@ -185,56 +189,12 @@ Używane w pomiarach wahadło Oberbecka (rysunek~\ref{fig:oberbeck}) jest obraca
 \end{figure}
 
 \subsection{Dostępne przyrządy}
-Do dyspozycji dostępne były następujące przyrządy pomiarowe:
-\begin{itemize}
-    \item wahadło Oberbecka z możliwością montażu ciężarków walcowych
-    \item zestaw ciężarków walcowych o różnych masach, promieniach i wysokościach
-    \item ciężarki do zawieszenia na nitce
-    \item fotokomórki do pomiaru czasu przelotu ciężarków
-    \item linijka i suwmiarka do pomiaru wymiarów ciężarków i odległości
-    \item waga elektryczna AXIS B2 o zakresie pomiarowym do \qty{2000}{\gram} i dokładności \qty{0.1}{\gram}.
-    \item taśma miernicza do pomiaru odległości między fotokomórkami o dokładności \qty{1}{\mm}
-    \item suwmiarka do pomiaru odległości ciężarków walcowych od osi obrotu o dokładności \qty{0.1}{\mm}
-\end{itemize}
+Do dyspozycji były następujące przyrządy pomiarowe: wahadło Oberbecka z~możliwością montażu ciężarków walcowych, zestaw obciążników walcowych o~różnych masach, promieniach i~wysokościach, ciężarki do zawieszenia na nitce, fotokomórki do pomiaru czasu przelotu ciężarków, linijka do pomiaru wymiarów ciężarków i~odległości z~dokładnością \qty{1}{\mm}, waga elektryczna AXIS B2 o~zakresie pomiarowym do \qty{2000}{\gram} i~dokładności \qty{0.1}{\gram}, taśma miernicza do pomiaru odległości między fotokomórkami o~dokładności \qty{1}{\mm} oraz suwmiarka do pomiaru wymiarów ciężarków walcowych i~ich odległości od osi obrotu o~dokładności \qty{0.1}{\mm}.
 % -------------------------------------------
 \section{Procedura pomiarowa}
 % -------------------------------------------
-\subsection{Zależność kwadratu czasu przelotu od odległości fotokomórek}
-Procedurę pomiarową należy powtórzyć kilkukrotnie dla różnych odległości fotokomórek, przy stałej masie ciężarków zawieszonych na nitce i braku ciężarków walcowych na ramionach wahadła:
-\begin{enumerate}
-    \item Ustawić fotokomórki w wybranej odległości od siebie.
-    \item Zawiesić na nitce ciężarki o stałej masie $m$.
-    \item Ustawić ciężarek ponad górną fotokomórką.
-    \item Powoli obracać wahadło aż do momentu, w którym ciężarek aktywuje fotokomórkę.
-    \item Cofnąć ciężarek do pozycji startowej i wyzerować fotokomórkę.
-    \item Zwolnić wahadło i pozwolić na swobodny spadek ciężarka, rejestrując czas przelotu między fotokomórkami.
-    \item Powtórzyć pomiar kilka razy dla tej samej odległości fotokomórek i obliczyć średni czas przelotu.
-    \item Powtórzyć całą procedurę dla różnych odległości fotokomórek, zachowując stałą masę ciężarków zawieszonych na nitce.
-\end{enumerate}
-\subsection{Zależność kwadratu czasu przelotu od kwadratu odległości ciężarków od osi obrotu}
-Procedurę pomiarową należy powtórzyć kilkukrotnie dla różnych odległości ciężarków walcowych od osi obrotu, przy stałej masie ciężarków zawieszonych na nitce i stałej odległości fotokomórek:
-\begin{enumerate}
-    \item Ustawić fotokomórki w stałej odległości od siebie.
-    \item Zawiesić na nitce ciężarki o stałej masie $m$.
-    \item Umieścić ciężarki walcowe na ramionach wahadła w wybranej odległości $d_W$ od osi obrotu symetrycznie po obu stronach.
-    \item Ustawić ciężarek ponad górną fotokomórką.
-    \item Powoli obracać wahadło aż do momentu, w którym ciężarek aktywuje fotokomórkę.
-    \item Cofnąć ciężarek do pozycji startowej i wyzerować fotokomórkę.
-    \item Zwolnić wahadło i pozwolić na swobodny spadek ciężarka, rejestrując czas przelotu między fotokomórkami.
-    \item Powtórzyć pomiar kilka razy dla tej samej odległości ciężarków walcowych od osi obrotu i obliczyć średni czas przelotu.
-    \item Powtórzyć całą procedurę dla różnych odległości ciężarków walcowych od osi obrotu, zachowując stałą masę ciężarków zawieszonych na nitce i stałą odległość fotokomórek od siebie.
-\end{enumerate}
-\subsection{Zależność kwadratu czasu przelotu od odwrotności masy ciężarków zawieszonych na nitce}
-\begin{enumerate}
-    \item Ustawić fotokomórki w stałej odległości od siebie.
-    \item Zawiesić na nitce ciężarki o wybranej masie $m$.
-    \item Ustawić ciężarek ponad górną fotokomórką.
-    \item Powoli obracać wahadło aż do momentu, w którym ciężarek aktywuje fotokomórkę.
-    \item Cofnąć ciężarek do pozycji startowej i wyzerować fotokomórkę.
-    \item Zwolnić wahadło i pozwolić na swobodny spadek ciężarka, rejestrując czas przelotu między fotokomórkami.
-    \item Powtórzyć pomiar kilka razy dla tej samej masy ciężarków zawieszonych na nitce i obliczyć średni czas przelotu.
-    \item Powtórzyć całą procedurę dla różnych mas ciężarków zawieszonych na nitce, zachowując stałą odległość fotokomórek od siebie.
-\end{enumerate}
+
+We wszystkich trzech seriach eksperymentalnych zastosowano jednolitą procedurę pomiarową, różniącą się jedynie parametrem zmienianym między seriami. W każdym przypadku fotokomórki ustawiano w zadanej odległości od siebie, po czym na szalce zawieszano ciężarki o odpowiednio dobranej masie $m$. Przed każdym pomiarem obracano wahadło powoli w kierunku nawijania nitki, tak aby ciężarek znalazł się ponad górną fotokomórką i ją aktywował, co służyło jako punkt zerowania układu mierzącego czas. Następnie cofano ciężarek do pozycji startowej, zerowano fotokomórkę i zwalniano wahadło, rejestrując czas swobodnego spadku ciężarków między fotokomórkami. Czynność tę powtarzano 10-krotnie w obrębie każdej serii, a do dalszych obliczeń wykorzystano średni czas przelotu. Różnica między poszczególnymi seriami polegała wyłącznie na tym, który parametr był zmieniany: w pierwszej serii zmieniano odległość fotokomórek przy braku ciężarków walcowych na ramionach, w drugiej serii zmieniano odległość ciężarków walcowych od osi obrotu przy stałej odległości fotokomórek, natomiast w trzeciej serii zmieniano masę ciężarków zawieszonych na nitce przy stałej odległości fotokomórek i braku ciężarków walcowych. We wszystkich seriach parametry niezmieniane były utrzymywane na stałym poziomie przez cały czas trwania danej serii.
 
 
 % -------------------------------------------
@@ -262,7 +222,7 @@ Dla każdej z trzech zależności przeprowadzono 4 serie pomiarowe, każda po 10
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.82\textwidth]{wykres1_surowe_h.pdf}
-    \caption{Surowe pomiary $t^2$ w funkcji odległości bramek $h$ dla czterech serii pomiarowych.}\label{fig:surowe_h}
+    \caption{Pomiary $t^2$ w funkcji odległości bramek $h$ dla czterech serii pomiarowych.}\label{fig:surowe_h}
 \end{figure}
 
 \subsection{Zależność kwadratu czasu przelotu od kwadratu odległości ciężarków od osi obrotu}
@@ -285,7 +245,7 @@ Dla każdej z trzech zależności przeprowadzono 4 serie pomiarowe, każda po 10
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.82\textwidth]{wykres2_surowe_dw2.pdf}
-    \caption{Surowe pomiary $t^2$ w funkcji $r_W^2$ dla czterech odległości ciężarków walcowych od osi obrotu.}\label{fig:surowe_dw2}
+    \caption{Pomiary $t^2$ w funkcji $r_W^2$ dla czterech odległości ciężarków walcowych od osi obrotu.}\label{fig:surowe_dw2}
 \end{figure}
 
 \subsection{Zależność kwadratu czasu przelotu od odwrotności masy ciężarków na nitce}
@@ -308,7 +268,7 @@ Dla każdej z trzech zależności przeprowadzono 4 serie pomiarowe, każda po 10
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.82\textwidth]{wykres3_surowe_m.pdf}
-    \caption{Surowe pomiary $t^2$ w funkcji $1/m$ dla czterech mas ciężarków zawieszonych na nitce.}\label{fig:surowe_m}
+    \caption{Pomiary $t^2$ w funkcji $1/m$ dla czterech mas ciężarków zawieszonych na nitce.}\label{fig:surowe_m}
 \end{figure}
 
 
@@ -428,7 +388,7 @@ Podstawiając wartości $m_1 = \qty{99.8 \pm 0.1}{\g}$, $g = \qty{9.81}{\m\per\s
 
 Wielkość $r_W$ oznacza odległość środka masy walca od osi obrotu. Zmierzono suwmiarką odległość $d_t$ między zewnętrznymi krawędziami obu walców (zamontowanych symetrycznie), skąd $r_W = d_t/2 - H_W/2 = (d_t - H_W)/2$.
 
-Przy stałej odległości bramek $h_2 = \qty{30.0 \pm 0.1}{\cm}$ i stałej masie szalki $m_2$ moment bezwładności ciężarków $J_W = J_{W,0} + M_W r_W^2$ (twierdzenie Steinera), skąd model liniowy:
+Przy stałej odległości bramek $h_2 = \qty{30.0 \pm 0.1}{\cm}$ i stałej masie szalki $m_2$ moment bezwładności ciężarków $J_W = J_{W,0} + M_W r_W^2$ (twierdzenie Steinera, równanie~\ref{eq:steiner}), skąd model liniowy:
 \begin{equation}
     t^2 = A_2 \cdot r_W^2 + B_2, \qquad
     A_2 = \frac{2h_2 M_W}{m_2 g r^2}, \quad
@@ -520,7 +480,7 @@ Zestawienie wyznaczonych wartości momentu bezwładności wahadła Oberbecka z t
 \subsection{Zależność kwadratu czasu przelotu od odległości fotokomórek}
 Wynik $J_X = (4{,}72 \pm 0{,}13)\times10^{-3}\ \si{\kg\m\squared}$ cechuje się najmniejszą niepewnością względną (${\approx}2{,}8\%$). Wysoki współczynnik determinacji $R^2 = 0{,}999$ potwierdza liniowość zależności $t^2(h)$.
 
-Wyraz wolny $B_1 = (-3{,}98 \pm 0{,}84)\ \si{\s\squared}$ odbiega od zera o ${\approx}4{,}7\sigma$, co jest statystycznie istotne. Ujemna wartość $B_1$ wymaga osobnego komentarza. Tarcie i opory ruchu wydłużają czas przelotu i zwiększają $t^2$, co dałoby $B_1 > 0$ --- zatem tarcie nie może wyjaśniać obserwowanego ujemnego wyrazu wolnego. Natomiast $B_1 < 0$ jest spójne z systematycznym \emph{przeszacowaniem} odległości bramek $h$: jeśli rzeczywista odległość między wiązkami fotokomórek jest mniejsza o stałe $\delta$ od zmierzonej taśmą wartości $h$, to $t^2 = A_1(h - \delta) = A_1 h + B_1$, skąd $\delta = -B_1/A_1 \approx \qty{4{,}2}{\cm}$. Tak duży offset mógłby wynikać z mierzenia odległości między zewnętrznymi krawędziami obudów fotokomórek zamiast między ich wiązkami świetlnymi, lub z nieprawidłowego ustawienia punktu odniesienia taśmy mierniczej. Liniowość $t^2(h)$ jest przy tym zachowana, bo przesunięcie $\delta$ działa jak stały offset osi $h$.
+Wyraz wolny $B_1 = (-3{,}98 \pm 0{,}84)\ \si{\s\squared}$ odbiega od zera o ${\approx}4{,}7\sigma$, co jest statystycznie istotne. Ujemna wartość $B_1$ wymaga osobnego komentarza. Tarcie i opory ruchu wydłużają czas przelotu i zwiększają $t^2$, co dałoby $B_1 > 0$ --- zatem tarcie nie może wyjaśniać obserwowanego ujemnego wyrazu wolnego. Natomiast $B_1 < 0$ jest spójne z systematycznym \emph{przeszacowaniem} odległości bramek $h$: jeśli rzeczywista odległość między wiązkami fotokomórek jest mniejsza o stałe $\delta$ od zmierzonej taśmą wartości $h$, to $t^2 = A_1(h - \delta) = A_1 h + B_1$, skąd $\delta = -B_1/A_1 \approx \qty{4{,}2}{\cm}$. Tak duży offset mógłby wynikać z mierzenia odległości między zewnętrznymi krawędziami obudów fotokomórek zamiast między ich wiązkami świetlnymi, lub z nieprawidłowego ustawienia punktu odniesienia taśmy mierniczej.
 
 \subsection{Zależność kwadratu czasu przelotu od kwadratu odległości ciężarków od osi obrotu}
 Wynik $J_X = (4{,}06 \pm 0{,}15)\times10^{-3}\ \si{\kg\m\squared}$ jest zgodny z eksperymentem~3 i mieści się w granicach $3\sigma$ od eksperymentu~1 ($|4{,}72 - 4{,}06|/\sqrt{0{,}13^2+0{,}15^2} \approx 3{,}3$). Moment bezwładności wyznaczono bezpośrednio z wyrazu wolnego $B_2$ i zmierzonej odległości bramek $h_2 = \qty{30.0 \pm 0.1}{\cm}$. Dominującym źródłem niepewności jest $u(B_2)$, odpowiadające za ${\approx}92\%$ wariancji $u^2(J_X)$; wkład $u(r)$ wynosi ${\approx}7\%$, pozostałe są pomijalne.

@@ -774,28 +774,37 @@ dominującym źródłem błędu w dalszych pomiarach eliptyczności.
 
 \subsection{Polaryzacja kołowa}
 
-Przy ustawieniu ćwierćfalówki pod kątem $\theta_\text{rel} = 45^{\circ}$ do polaryzatora
-uzyskano eliptyczność doświadczalną $e_\text{exp} = 0{,}195 \pm 0{,}012$, znacząco
-odbiegającą od wartości teoretycznej $e_\text{teor} = 1{,}000 \pm 0{,}049$
-dla polaryzacji kołowej. Na rozbieżność składają się dwa efekty.
-Po pierwsze, fluktuacje wskazań miernika sięgające ponad $10\,\%$ odczytu
-powodują, że parametry $a_1$ i $a_3$ wyznaczone z dopasowania obarczone są
-niepewnością znacznie większą niż sugeruje macierz kowariancji --- $e_\text{exp}$
-może być przeszacowana lub niedoszacowana zależnie od kierunku fluktuacji
-w chwili pomiaru.
-Po drugie, parametr dopasowania $a_2 = (10{,}0 \pm 0{,}5){}^{\circ}$ wskazuje,
-że główna oś elipsy jest obrócona o $10^{\circ}$ względem osi polaryzatora.
-Dla idealnej polaryzacji kołowej ($e = 1$) kierunek osi głównej jest nieokreślony;
-niezerowe $a_2$ świadczy zatem o tym, że układ produkuje polaryzację
-eliptyczną, a nie kołową, nawet abstrahując od wartości $e_\text{exp}$.
-Obrót osi o $10^{\circ}$ jest typowym sygnałem błędnego ustawienia kąta ćwierćfalówki
-($\theta_\text{rel} \neq 45^{\circ}$), a nie wyłącznie nieidelaności optycznej.
-Po trzecie, zastosowana ćwierćfalówka może nie być idealną płytką $\lambda/4$
-dla długości fali $\lambda = \SI{578}{nm}$ --- nieidealne opóźnienie fazowe
-$\delta \neq \pi/2$ również zmniejsza eliptyczność poniżej wartości kołowej.
-Obie przyczyny (błąd kąta ustawienia i nieidealne $\delta$) mogą działać jednocześnie.
-Pomimo rozbieżności cos$^2$-kształt krzywej z niezerowym minimum potwierdza
-zmianę stanu polaryzacji przez ćwierćfalówkę.
+Zmierzona eliptyczność $e_\text{exp} = 0{,}195 \pm 0{,}012$ istotnie odbiega od
+wartości teoretycznej $e_\text{teor} = 1{,}000$ dla polaryzacji kołowej.
+Rozbieżność ta wynika z błędnej interpretacji azymutów wyznaczonych metodą
+skrzyżowanych polaryzatorów.
+
+Natężenie przechodzące przez układ złożony z polaryzatora, ćwierćfalówki
+i skrzyżowanego analizatora wynosi~\cite{skrypt}:
+\begin{equation}
+    I(\varphi) = \tfrac{I_0}{2}\sin^2(2\varphi),
+    \label{eq:qwp_cross}
+\end{equation}
+gdzie $\varphi$ jest kątem między osią szybką płytki a osią transmisji polaryzatora.
+Wynika stąd, że:
+\begin{itemize}
+    \item \textbf{maksimum} transmisji odpowiada $\varphi = 45^{\circ}$ ---
+          oś szybka pod kątem $45^{\circ}$ do polaryzatora;
+    \item \textbf{minimum} transmisji odpowiada $\varphi = 0^{\circ}$ lub $90^{\circ}$ ---
+          oś szybka równoległa lub prostopadła do polaryzatora.
+\end{itemize}
+Azymut~A (odczyt $-27^{\circ}$) jest zatem pozycją \emph{maksimum}, czyli
+odpowiada $\varphi = 45^{\circ}$ --- osi szybkiej już pod kątem $45^{\circ}$
+do polaryzatora. Ponieważ właśnie $\varphi = 45^{\circ}$ jest warunkiem koniecznym
+do wytworzenia polaryzacji kołowej, prawidłowym ustawieniem ćwierćfalówki był
+odczyt azymutu~A ($-27^{\circ}$), a nie $-27^{\circ} + 45^{\circ} = 18^{\circ}$.
+
+Ustawiając ćwierćfalówkę na $18^{\circ}$, obrócono jej oś szybką do pozycji
+$\varphi = 90^{\circ}$ względem polaryzatora. W tej konfiguracji wejściowa
+fala liniowo spolaryzowana biegnie wyłącznie wzdłuż jednej osi głównej płytki
+i nie ulega rozkładowi na dwie ortogonalne składowe --- ćwierćfalówka nie zmienia
+stanu polaryzacji. Wyjściowe światło pozostaje liniowo spolaryzowane, co wyjaśnia
+uzyskane $e_\text{exp} \approx 0{,}17 \approx 0$ zamiast oczekiwanego $e = 1$.
 
 \subsection{Polaryzacje eliptyczne}
 

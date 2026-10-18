@@ -1,6 +1,6 @@
 # CLAUDE.md — jak pisać sprawozdania z I Pracowni Fizycznej
 
-Repozytorium zawiera sprawozdania z I Pracowni Fizycznej (fizyka, UJ). Autor: Karol Peszek, grupa B.
+Repozytorium zawiera sprawozdania z I Pracowni Fizycznej (fizyka, UJ). Autor: Karol Peszek, grupa A (od semestru zimowego 2026/27; sprawozdania 1–9 pisane w grupie B).
 Każde ćwiczenie ma nazwę kodową z serialu *Severance* (Allentown, Trinity, Cork, Molde…), a stopka
 każdej strony ma logo Lumon. Ten plik opisuje styl i sposób pisania, wyciągnięte ze sprawozdań 1–9.
 Najlepszym wzorcem jest **`9. Cork/cork.tex`** (wersja już po poprawkach prowadzącego).

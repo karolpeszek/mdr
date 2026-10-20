@@ -1,0 +1,71 @@
+element,symbol,line,color,x,u_x,intensity,rejected,role,stable,lambda_cal,u_lambda_cal,lambda,u_lambda,spectrum,nist_intensity,n_2sigma
+Neon,Ne,1,ciemnoczerwony / purpurowy,3.80,0.20,2,,comparison,tak,705.61,10.21,703.24,0.00,Ne I,85000.00,7.00
+Neon,Ne,2,ciemnoczerwony / purpurowy,4.00,0.20,2,,comparison,tak,696.71,9.71,692.95,0.00,Ne I,100000.00,5.00
+Neon,Ne,3,czerwony,4.60,0.20,7,,comparison,tak,672.12,8.43,667.83,0.00,Ne I,5000.00,5.00
+Neon,Ne,4,czerwony,4.80,0.20,6,,comparison,tak,664.55,8.06,665.21,0.00,Ne I,1500.00,7.00
+Neon,Ne,5,czerwony,5.00,0.20,6,,comparison,tak,657.26,7.73,659.90,0.00,Ne I,10000.00,9.00
+Neon,Ne,6,czerwony,5.20,0.20,5,,comparison,tak,650.23,7.41,650.65,0.00,Ne I,15000.00,11.00
+Neon,Ne,7,jaskrawoczerwony,5.50,0.20,9,,comparison,tak,640.16,6.98,640.22,0.00,Ne I,20000.00,17.00
+Neon,Ne,8,czerwony,5.60,0.20,7,,comparison,tak,636.92,6.85,638.30,0.00,Ne I,10000.00,17.00
+Neon,Ne,9,czerwony,5.90,0.20,7,,comparison,tak,627.52,6.48,626.65,0.00,Ne I,10000.00,20.00
+Neon,Ne,10,czerwono-pomarańczowy,6.10,0.20,6,,comparison,tak,621.52,6.25,621.73,0.00,Ne I,10000.00,19.00
+Neon,Ne,11,pomarańczowy,6.30,0.20,8,,comparison,tak,615.71,6.04,616.36,0.00,Ne I,10000.00,14.00
+Neon,Ne,12,pomarańczowy,6.50,0.20,7,,comparison,nie,610.08,5.83,614.31,0.00,Ne I,10000.00,14.00
+Neon,Ne,13,pomarańczowy,6.70,0.20,6,,comparison,tak,604.63,5.65,607.43,0.00,Ne I,10000.00,13.00
+Neon,Ne,14,pomarańczowo-żółty,6.80,0.20,6,,comparison,tak,601.97,5.56,603.00,0.00,Ne I,10000.00,12.00
+Neon,Ne,15,żółto-pomarańczowy,7.10,0.20,8,,comparison,tak,594.22,5.30,594.48,0.00,Ne I,5000.00,12.00
+Neon,Ne,16,żółty,7.20,0.20,7,,comparison,nie,591.72,5.22,588.19,0.00,Ne I,10000.00,12.00
+Neon,Ne,17,żółty,7.40,0.20,8,,comparison,tak,586.82,5.07,585.25,0.00,Ne I,20000.00,10.00
+Neon,Ne,18,żółty,7.60,0.20,7,,comparison,tak,582.06,4.92,582.02,0.00,Ne I,5000.00,10.00
+Neon,Ne,19,żółtozielony,7.90,0.20,3,,comparison,nie,575.18,4.72,576.44,0.00,Ne I,7000.00,8.00
+Neon,Ne,20,zielony,9.70,0.20,4,,comparison,tak,539.25,3.75,540.06,0.00,Ne I,20000.00,12.00
+Neon,Ne,21,zielony,10.10,0.20,3,,comparison,nie,532.32,3.57,533.08,0.00,Ne I,6000.00,8.00
+Neon,Ne,22,szarozielony (bardzo słaby),11.50,0.20,1,bardzo słaba (jasność 1),,,510.49,3.06,,0.00,,,
+Neon,Ne,23,szaroniebieskawy (bardzo słaby),12.00,0.20,1,bardzo słaba (jasność 1),,,503.48,2.89,,0.00,,,
+Neon,Ne,24,niebieski,13.40,0.20,7,,comparison,nie,485.72,2.50,483.73,0.00,Ne I,5000.00,15.00
+Hel,He,1,ciemnoczerwony (bardzo słaby),3.30,0.20,2,,calibration,,729.61,11.66,728.13,0.00,He I,,
+Hel,He,2,różowoczerwony,3.80,0.20,4,,calibration,,705.61,10.21,706.52,0.00,He I,,
+Hel,He,3,czerwony (purpurowy na zdjęciu),4.70,0.20,7,,calibration,,668.30,8.24,667.82,0.00,He I,,
+Hel,He,4,żółty,7.40,0.20,10,,calibration,,586.82,5.07,587.56,0.00,He I,,
+Hel,He,5,zielononiebieski (cyjan),11.90,0.20,3,,calibration,,504.85,2.93,504.77,0.00,He I,,
+Hel,He,6,zielononiebieski (cyjan),12.10,0.20,7,,calibration,,502.13,2.86,501.57,0.00,He I,,
+Hel,He,7,błękitny,12.90,0.20,6,,calibration,,491.77,2.63,492.19,0.00,He I,,
+Hel,He,8,niebieski,14.70,0.20,5,,calibration,,471.31,2.19,471.31,0.00,He I,,
+Hel,He,9,niebieski / indygo,17.40,0.20,4,,calibration,,446.37,1.76,447.15,0.00,He I,,
+Hel,He,10,fioletowoniebieski,18.40,0.20,3,,calibration,,438.52,1.69,438.79,0.00,He I,,
+Rtęć,Hg,1,żółtozielony,7.90,0.20,8,,calibration,,575.18,4.72,578.01,1.05,Hg I,,
+Rtęć,Hg,2,zielony,9.40,0.20,9,,calibration,,544.67,3.88,546.08,0.00,Hg I,,
+Rtęć,Hg,3,błękitnozielony (bardzo słaby),13.00,0.20,1,bardzo słaba (jasność 1),,,490.54,2.60,,0.00,,,
+Rtęć,Hg,4,niebieski,18.80,0.20,7,,calibration,,435.55,1.68,435.83,0.00,Hg I,,
+Sód,Na,1,pomarańczowoczerwony (słaby),6.40,0.20,2,,comparison,tak,612.87,5.93,615.75,0.33,Na I,,1.00
+Sód,Na,2,żółty,7.50,0.20,10,,comparison,tak,584.42,4.99,589.29,0.30,Na I,,1.00
+Sód,Na,3,zielony,8.30,0.20,4,,comparison,tak,566.44,4.47,568.54,0.28,Na I,,1.00
+Sód,Na,4,bladozielony,11.20,0.20,2,,comparison,tak,514.88,3.16,515.11,0.23,Na I,,1.00
+Sód,Na,5,cyjan,12.40,0.20,6,,comparison,tak,498.14,2.77,498.07,0.21,Na I,,1.00
+Sód,Na,6,bladoniebieski,12.70,0.20,3,,,tak,494.28,2.69,,0.00,,,1.00
+Sód,Na,7,fioletowoniebieski (słaby),15.10,0.20,3,,comparison,tak,467.22,2.10,466.67,0.19,Na I,,1.00
+Sód,Na,8,niebieski,16.30,0.20,6,,comparison,tak,455.81,1.89,454.34,0.18,Na I,,1.00
+Sód,Na,9,fioletowoniebieski (bardzo słaby),16.80,0.20,1,bardzo słaba (jasność 1),,,451.41,1.83,,0.00,,,
+Sód,Na,10,fioletowy (słaby),19.00,0.20,2,,comparison,tak,434.11,1.68,434.31,0.16,Na I,,2.00
+Sód,Na,11,fioletowy (słaby),19.50,0.20,2,,comparison,tak,430.59,1.69,428.94,0.16,Na I,,3.00
+Sód,Na,12,fioletowy,20.00,0.20,3,,comparison,tak,427.21,1.71,427.52,0.16,Na I,,2.00
+Sód,Na,13,"niebieskofioletowy (poza skalą, szacunkowo)",21.10,0.20,5,poza skalą (szacunkowo),,,420.23,1.82,,0.00,,,
+Sód,Na,14,"fioletowy (poza skalą, szacunkowo)",21.80,0.20,4,poza skalą (szacunkowo),,,416.09,1.92,,0.00,,,
+Cynk,Zn,1,czerwony,5.50,0.20,9,,test,,640.16,6.98,636.23,0.00,Zn I,,
+Cynk,Zn,2,różowawy (bardzo słaby),7.20,0.20,1,bardzo słaba (jasność 1),,,591.72,5.22,,0.00,,,
+Cynk,Zn,3,morskozielony,9.20,0.20,3,,,,548.40,3.98,,0.00,,,
+Cynk,Zn,4,cyjan,11.00,0.20,3,,test,,517.89,3.23,518.20,0.00,Zn I,,
+Cynk,Zn,5,cyjan,11.60,0.20,5,,,,509.06,3.02,,0.00,,,
+Cynk,Zn,6,jasny błękitny,13.80,0.20,9,,test,,481.09,2.39,481.05,0.00,Zn I,,
+Cynk,Zn,7,niebieski,14.50,0.20,7,,test,,473.41,2.23,472.22,0.00,Zn I,,
+Cynk,Zn,8,niebieski,14.90,0.20,6,,test,,469.24,2.15,468.01,0.00,Zn I,,
+Kadm,Cd,1,czerwony,5.30,0.20,10,,calibration,,646.81,7.27,643.85,0.00,Cd I,,
+Kadm,Cd,2,różowoczerwony (słaby),6.40,0.20,2,,comparison,nie,612.87,5.93,609.91,0.00,Cd I,300.00,2.00
+Kadm,Cd,3,morskozielony (bardzo słaby),8.50,0.20,1,bardzo słaba (jasność 1),,,562.24,4.35,,0.00,,,
+Kadm,Cd,4,cyjan (słaby),11.20,0.20,2,,comparison,tak,514.88,3.16,515.47,0.00,Cd I,6.00,1.00
+Kadm,Cd,5,cyjan,11.60,0.20,10,,calibration,,509.06,3.02,508.58,0.00,Cd I,,
+Kadm,Cd,6,niebieski,13.90,0.20,9,,calibration,,479.96,2.37,479.99,0.00,Cd I,,
+Kadm,Cd,7,niebieski,14.90,0.20,8,,calibration,,469.24,2.15,467.81,0.00,Cd I,,
+Kadm,Cd,8,morskozielony (bardzo słaby),17.00,0.20,1,bardzo słaba (jasność 1),,,449.70,1.80,,0.00,,,
+Kadm,Cd,9,niebieskofioletowy,17.90,0.20,4,,calibration,,442.36,1.72,441.57,0.00,Cd II,,
+Kadm,Cd,10,niebieski (bardzo słaby),19.30,0.20,1,bardzo słaba (jasność 1),,,431.98,1.69,,0.00,,,

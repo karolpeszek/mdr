@@ -1,0 +1,71 @@
+element,symbol,line,color,x,u_x,intensity
+Neon,Ne,1,ciemnoczerwony / purpurowy,3.8,0.2,2
+Neon,Ne,2,ciemnoczerwony / purpurowy,4.0,0.2,2
+Neon,Ne,3,czerwony,4.6,0.2,7
+Neon,Ne,4,czerwony,4.8,0.2,6
+Neon,Ne,5,czerwony,5.0,0.2,6
+Neon,Ne,6,czerwony,5.2,0.2,5
+Neon,Ne,7,jaskrawoczerwony,5.5,0.2,9
+Neon,Ne,8,czerwony,5.6,0.2,7
+Neon,Ne,9,czerwony,5.9,0.2,7
+Neon,Ne,10,czerwono-pomarańczowy,6.1,0.2,6
+Neon,Ne,11,pomarańczowy,6.3,0.2,8
+Neon,Ne,12,pomarańczowy,6.5,0.2,7
+Neon,Ne,13,pomarańczowy,6.7,0.2,6
+Neon,Ne,14,pomarańczowo-żółty,6.8,0.2,6
+Neon,Ne,15,żółto-pomarańczowy,7.1,0.2,8
+Neon,Ne,16,żółty,7.2,0.2,7
+Neon,Ne,17,żółty,7.4,0.2,8
+Neon,Ne,18,żółty,7.6,0.2,7
+Neon,Ne,19,żółtozielony,7.9,0.2,3
+Neon,Ne,20,zielony,9.7,0.2,4
+Neon,Ne,21,zielony,10.1,0.2,3
+Neon,Ne,22,szarozielony (bardzo słaby),11.5,0.2,1
+Neon,Ne,23,szaroniebieskawy (bardzo słaby),12.0,0.2,1
+Neon,Ne,24,niebieski,13.4,0.2,7
+Hel,He,1,ciemnoczerwony (bardzo słaby),3.3,0.2,2
+Hel,He,2,różowoczerwony,3.8,0.2,4
+Hel,He,3,czerwony (purpurowy na zdjęciu),4.7,0.2,7
+Hel,He,4,żółty,7.4,0.2,10
+Hel,He,5,zielononiebieski (cyjan),11.9,0.2,3
+Hel,He,6,zielononiebieski (cyjan),12.1,0.2,7
+Hel,He,7,błękitny,12.9,0.2,6
+Hel,He,8,niebieski,14.7,0.2,5
+Hel,He,9,niebieski / indygo,17.4,0.2,4
+Hel,He,10,fioletowoniebieski,18.4,0.2,3
+Rtęć,Hg,1,żółtozielony,7.9,0.2,8
+Rtęć,Hg,2,zielony,9.4,0.2,9
+Rtęć,Hg,3,błękitnozielony (bardzo słaby),13.0,0.2,1
+Rtęć,Hg,4,niebieski,18.8,0.2,7
+Sód,Na,1,pomarańczowoczerwony (słaby),6.4,0.2,2
+Sód,Na,2,żółty,7.5,0.2,10
+Sód,Na,3,zielony,8.3,0.2,4
+Sód,Na,4,bladozielony,11.2,0.2,2
+Sód,Na,5,cyjan,12.4,0.2,6
+Sód,Na,6,bladoniebieski,12.7,0.2,3
+Sód,Na,7,fioletowoniebieski (słaby),15.1,0.2,3
+Sód,Na,8,niebieski,16.3,0.2,6
+Sód,Na,9,fioletowoniebieski (bardzo słaby),16.8,0.2,1
+Sód,Na,10,fioletowy (słaby),19.0,0.2,2
+Sód,Na,11,fioletowy (słaby),19.5,0.2,2
+Sód,Na,12,fioletowy,20.0,0.2,3
+Sód,Na,13,"niebieskofioletowy (poza skalą, szacunkowo)",21.1,0.2,5
+Sód,Na,14,"fioletowy (poza skalą, szacunkowo)",21.8,0.2,4
+Cynk,Zn,1,czerwony,5.5,0.2,9
+Cynk,Zn,2,różowawy (bardzo słaby),7.2,0.2,1
+Cynk,Zn,3,morskozielony,9.2,0.2,3
+Cynk,Zn,4,cyjan,11.0,0.2,3
+Cynk,Zn,5,cyjan,11.6,0.2,5
+Cynk,Zn,6,jasny błękitny,13.8,0.2,9
+Cynk,Zn,7,niebieski,14.5,0.2,7
+Cynk,Zn,8,niebieski,14.9,0.2,6
+Kadm,Cd,1,czerwony,5.3,0.2,10
+Kadm,Cd,2,różowoczerwony (słaby),6.4,0.2,2
+Kadm,Cd,3,morskozielony (bardzo słaby),8.5,0.2,1
+Kadm,Cd,4,cyjan (słaby),11.2,0.2,2
+Kadm,Cd,5,cyjan,11.6,0.2,10
+Kadm,Cd,6,niebieski,13.9,0.2,9
+Kadm,Cd,7,niebieski,14.9,0.2,8
+Kadm,Cd,8,morskozielony (bardzo słaby),17.0,0.2,1
+Kadm,Cd,9,niebieskofioletowy,17.9,0.2,4
+Kadm,Cd,10,niebieski (bardzo słaby),19.3,0.2,1

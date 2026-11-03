@@ -176,7 +176,7 @@ Dla małego $\gamma$ można rozwinąć $\sin(\delta_m + \gamma) \approx \sin\del
 skąd współczynnik załamania jest liniową funkcją $\gamma$: $n = p_1 + q_1\gamma$.
 W przybliżeniu małych kątów położenie linii $x$ na skali spektroskopu jest liniową funkcją
 $\gamma$, $x = x_0 + k\gamma$ (zero skali nie musi odpowiadać $\gamma = 0$; przesunięcie $x_0$
-pochłania wyraz stały), zatem $n = p_2 + q_2 x$, gdzie $p_1, q_1, p_2, q_2, x_0, k$ --- stałe układu.
+niweluje wyraz stały), zatem $n = p_2 + q_2 x$, gdzie $p_1, q_1, p_2, q_2, x_0, k$ --- stałe układu.
 Porównanie ze wzorem Cauchy'ego~\eqref{eq:cauchy} prowadzi do liniowej zależności
 odwrotności kwadratu długości fali od położenia linii~\cite{skrypt}:
 \begin{equation}
@@ -190,12 +190,12 @@ Wzór~\eqref{eq:dispersion_linear} wynika z trzech przybliżeń: rozwinięcia fu
 trygonometrycznych do pierwszego rzędu w $\gamma$, liniowości odwzorowania kąta $\gamma$
 na położenie $x$ oraz dwuwyrazowego wzoru Cauchy'ego (z pominięciem wyrazu $C/\lambda^4$).
 Na całym zakresie widzialnym każde z nich może dawać mierzalną poprawkę drugiego rzędu.
-Najprostsze rozszerzenie modelu ma postać
+Najprostsze rozszerzenie modelu ma postać:
 \begin{equation}
     \frac{1}{\lambda^2} = a_1 + a_2 x + a_3 x^2,
     \label{eq:dispersion_quadratic}
 \end{equation}
-gdzie $a_3$ --- współczynnik opisujący odstępstwo od liniowości. Zależność $\lambda(x)$,
+gdzie: $a_3$ --- współczynnik opisujący odstępstwo od liniowości. Zależność $\lambda(x)$,
 wyznaczona dla linii o znanych długościach fal, jest \emph{krzywą dyspersji}
 (krzywą kalibracyjną) spektroskopu: pozwala przypisać długość fali dowolnej linii na
 podstawie jej położenia na skali.
@@ -569,8 +569,8 @@ Rysunku~\ref{fig:inverse_square}.
     \caption{Górny panel: odwrotność kwadratu długości fali linii wzorcowych w~funkcji
              położenia na skali wraz z~dopasowanym modelem liniowym (linia przerywana)
              i~kwadratowym (linia ciągła). Dolny panel: residua znormalizowane
-             $(y_i - f(x_i))/\sigma_{y,i}$ dla obu modeli (punkty rozsunięte w~poziomie
-             dla czytelności). Słupki błędów odpowiadają $u_x = 0{,}2$~dz.
+             $(y_i - f(x_i))/\sigma_{y,i}$ modelu liniowego (fioletowe kółka)
+             i~kwadratowego (czarne kwadraty), rozsunięte w~poziomie dla czytelności. Słupki błędów odpowiadają $u_x = 0{,}2$~dz.
              (górny panel) i~$1\sigma$ (dolny panel).}\label{fig:inverse_square}
 \end{figure}
 
@@ -704,7 +704,7 @@ przypisano linie z~NIST~\cite{nist}. Kandydatami były: dla neonu linie Ne~I o~w
 intensywności $I_\text{NIST} \geq 1000$ i~$\lambda \geq 400$~nm, dla sodu dublety Na~I
 (średnia składowych z~niepewnością równą połowie ich odstępu), dla kadmu linie Cd~I
 z~zakresu $390$--$760$~nm nieużyte w~kalibracji. Każdą linię NIST przypisywano co najwyżej
-raz, z~zachowaniem kolejności długości fal, wybierając przypisanie o~najmniejszym koszcie
+raz, z~zachowaniem kolejności długości fal, wybierając przypisanie o~najmniejszym koszcie:
 \begin{equation}
     K = \sum_\text{przypisane}\left[z_i^2 - \beta\, b_i \log_{10}\frac{I_j}{I_0}\right]
         + 3^2 N_\text{nieprzyp},
@@ -712,7 +712,7 @@ raz, z~zachowaniem kolejności długości fal, wybierając przypisanie o~najmnie
     z_i = \frac{|\lambda_i - \lambda_j|}{\sqrt{u^2(\lambda_i) + u_{\lambda,j}^2}} \leq 3,
     \label{eq:assignment_cost}
 \end{equation}
-gdzie $b_i$ --- zanotowana jasność linii podzielona przez 10, $I_j$ --- intensywność
+gdzie: $b_i$ --- zanotowana jasność linii podzielona przez 10, $I_j$ --- intensywność
 przypisanej linii NIST, $I_0$ --- najmniejsza intensywność wśród kandydatów danego
 pierwiastka, $N_\text{nieprzyp}$ --- liczba linii bez przypisania. Drugi człon nagradza
 dopasowanie jasnej linii obserwowanej do silnej linii tablicowej. Samo kryterium $\sum z_i^2$
